@@ -12,3 +12,8 @@
 */
 
 Route::get('/','WelcomeController@index');
+Route::get('/topic','WelcomeController@topic');
+Route::get('/individual','WelcomeController@individual');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
